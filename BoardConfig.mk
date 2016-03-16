@@ -27,6 +27,10 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1363148800
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 BOARD_EGL_CFG := device/asus/T00F/configs/egl.cfg
+COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.opengles.version = 131072
 
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
