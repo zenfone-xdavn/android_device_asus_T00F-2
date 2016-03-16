@@ -2,6 +2,9 @@
 TARGET_SCREEN_HEIGHT := 720
 TARGET_SCREEN_WIDTH := 1280
 
+REF_PRODUCT_NAME := redhookbay
+TARGET_BOARD_PLATFORM := clovertrail
+
 # Inherit some common CM stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
