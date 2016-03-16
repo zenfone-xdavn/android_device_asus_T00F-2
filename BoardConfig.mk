@@ -49,6 +49,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 # OTA Packaging / Bootimg creation
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/T00F/mkbootimg.mk
+NEED_KERNEL_MODULE_ROOT := true
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/pci0000:00/0000:00:00.3/i2c-0/0-0020/input/input1/dclick_mode"
 
