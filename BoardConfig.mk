@@ -26,6 +26,16 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912 # 536870912
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1363148800
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# Inline kernel building
+TARGET_KERNEL_SOURCE := kernel/asus/clovertrail
+TARGET_KERNEL_ARCH := x86
+BOARD_KERNEL_IMAGE_NAME := bzImage
+TARGET_KERNEL_CONFIG := cyanogenmod_a500cg_defconfig
+
+# Kernel cmdline
+BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 kmemleak=off androidboot.bootmedia=sdcard vmalloc=256M androidboot.hardware=redhookbay watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 BOARD_EGL_CFG := device/asus/T00F/configs/egl.cfg
 COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
 
