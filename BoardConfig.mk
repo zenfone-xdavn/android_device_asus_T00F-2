@@ -42,5 +42,9 @@ COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.opengles.version = 131072
 
+# OTA Packaging / Bootimg creation
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := device/asus/T00F/mkbootimg.mk
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk

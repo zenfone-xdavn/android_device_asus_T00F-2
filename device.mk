@@ -37,6 +37,12 @@ PRODUCT_COPY_FILES += \
     device/asus/mofd-common/keylayout/ftxxxx_ts.kl:system/usr/keylayout/synaptics_dsx.kl \
     device/asus/mofd-common/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl:system/usr/keylayout/cloverview_audio_Intel_MID_Audio_Jack.kl
 
+
+# OTA Packaging / Bootimg creation
+PRODUCT_PACKAGES += \
+    pack_intel \
+    unpack_intel
+
 $(call inherit-product-if-exists, vendor/asus/T00F/T00F-vendor.mk)
 
 # Inherit from cvtlp-common
