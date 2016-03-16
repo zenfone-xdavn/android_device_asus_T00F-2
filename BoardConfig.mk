@@ -21,7 +21,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/asus/T00F
 
 # Specific headers
 TARGET_BOARD_KERNEL_HEADERS := device/asus/T00F/kernel-headers
-TARGET_SPECIFIC_HEADER_PATH += device/asus/A500CG/include
+TARGET_SPECIFIC_HEADER_PATH += device/asus/T00F/include
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
