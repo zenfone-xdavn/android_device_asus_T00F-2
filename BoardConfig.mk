@@ -26,5 +26,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912 # 536870912
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1363148800
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+BOARD_EGL_CFG := device/asus/T00F/configs/egl.cfg
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
