@@ -18,8 +18,9 @@
 -include device/asus/cvtlp-common/BoardConfigCommon.mk
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := ./device/asus/T00F/releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/ota_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := ./device/asus/T00F/releasetools/extensions
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zenfone_ota_from_target_files
+TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zenfone_img_from_target_files
 TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/T00F/releasetools/make_recovery_patch
 
 # Specific headers
