@@ -18,6 +18,7 @@
 -include device/asus/cvtlp-common/BoardConfigCommon.mk
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/T00F
+TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/T00F/releasetools/make_recovery_patch
 
 # Specific headers
 TARGET_BOARD_KERNEL_HEADERS := device/asus/T00F/kernel-headers
