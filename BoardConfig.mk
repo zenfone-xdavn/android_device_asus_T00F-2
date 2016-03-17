@@ -54,8 +54,6 @@ BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := device/asus/T00F/mkbootimg.mk
 NEED_KERNEL_MODULE_ROOT := true
 
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/pci0000:00/0000:00:00.3/i2c-0/0-0020/input/input1/dclick_mode"
-
 TARGET_RECOVERY_DEVICE_MODULES += libosip-updater liboempartitioning_static
 TARGET_RECOVERY_UPDATER_LIBS += libosip-updater
 TARGET_RECOVERY_UPDATER_EXTRA_LIBS += \
