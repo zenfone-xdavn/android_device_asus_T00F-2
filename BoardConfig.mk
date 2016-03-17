@@ -46,12 +46,8 @@ TARGET_KERNEL_CONFIG := cyanogenmod_a500cg_defconfig
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 kmemleak=off androidboot.bootmedia=sdcard vmalloc=256M androidboot.hardware=redhookbay watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
-BOARD_EGL_CFG := device/asus/T00F/configs/egl.cfg
+ 
 COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
-
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.opengles.version = 131072
 
 # OTA Packaging / Bootimg creation
 BOARD_CUSTOM_BOOTIMG := true
