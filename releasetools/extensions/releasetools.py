@@ -14,6 +14,16 @@
 # limitations under the License.
 
 """Custom OTA commands for ASUS ZENFONE 4 5 6 devices"""
+import common
+import struct
+
+def FullOTA_PostValidate(info):
+	# run e2fsck
+	info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/mmcblk0p9");');
+	# resize2fs: run and delete
+	info.script.AppendExtra('run_program("/tmp/install/bin/resize2fs_static", "/dev/block/mmcblk0p9");');
+	# run e2fsck
+	info.script.AppendExtra('run_program("/sbin/e2fsck", "-fy", "/dev/block/mmcblk0p9");');
 
 def FullOTA_InstallEnd(info):
   info.script.script = [cmd for cmd in info.script.script if not "boot.img" in cmd]

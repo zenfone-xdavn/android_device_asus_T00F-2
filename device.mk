@@ -43,6 +43,12 @@ PRODUCT_PACKAGES += \
     pack_intel \
     unpack_intel
 
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    make_ext4fs \
+    resize2fs_static \
+    setup_fs
+
 $(call inherit-product-if-exists, vendor/asus/T00F/T00F-vendor.mk)
 
 # Inherit from cvtlp-common
