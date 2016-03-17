@@ -23,6 +23,9 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zen
 TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zenfone_img_from_target_files
 TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/T00F/releasetools/make_recovery_patch
 
+#cmhw
+BOARD_HARDWARE_CLASS := device/asus/T00F/cmhw
+
 # Specific headers
 TARGET_BOARD_KERNEL_HEADERS := device/asus/T00F/kernel-headers
 TARGET_SPECIFIC_HEADER_PATH += device/asus/T00F/include
