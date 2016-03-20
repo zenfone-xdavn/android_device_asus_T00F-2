@@ -17,18 +17,8 @@
 # inherit from common cvtlp-common
 -include device/asus/cvtlp-common/BoardConfigCommon.mk
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := ./device/asus/T00F/releasetools/extensions
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zenfone_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/asus/T00F/releasetools/zenfone_img_from_target_files
-TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/T00F/releasetools/make_recovery_patch
-
 #cmhw
 BOARD_HARDWARE_CLASS := device/asus/T00F/cmhw
-
-# Specific headers
-TARGET_BOARD_KERNEL_HEADERS := device/asus/T00F/kernel-headers
-TARGET_SPECIFIC_HEADER_PATH += device/asus/T00F/include
 
 # Partitions
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -46,19 +36,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_a500cg_defconfig
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 kmemleak=off androidboot.bootmedia=sdcard vmalloc=256M androidboot.hardware=redhookbay watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
- 
-COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH -DWORKAROUND_BUG_10194508
-
-# OTA Packaging / Bootimg creation
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/asus/T00F/mkbootimg.mk
-NEED_KERNEL_MODULE_ROOT := true
-
-TARGET_RECOVERY_DEVICE_MODULES += libosip-updater liboempartitioning_static
-TARGET_RECOVERY_UPDATER_LIBS += libosip-updater
-TARGET_RECOVERY_UPDATER_EXTRA_LIBS += \
-    libosip-updater \
-    liboempartitioning_static
 
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk

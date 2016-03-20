@@ -30,25 +30,6 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/T00F/overlay
 
-# Key layout files
-PRODUCT_COPY_FILES += \
-    device/asus/T00F/idc/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc \
-    device/asus/mofd-common/keylayout/ftxxxx_ts.kcm:system/usr/keychars/synaptics_dsx.kcm \
-    device/asus/mofd-common/keylayout/ftxxxx_ts.kl:system/usr/keylayout/synaptics_dsx.kl \
-    device/asus/mofd-common/keylayout/lm49453-audio_Intel_MID_Audio_Jack.kl:system/usr/keylayout/cloverview_audio_Intel_MID_Audio_Jack.kl
-
-
-# OTA Packaging / Bootimg creation
-PRODUCT_PACKAGES += \
-    pack_intel \
-    unpack_intel
-
-# Filesystem management tools
-PRODUCT_PACKAGES += \
-    make_ext4fs \
-    resize2fs_static \
-    setup_fs
-
 $(call inherit-product-if-exists, vendor/asus/T00F/T00F-vendor.mk)
 
 # Inherit from cvtlp-common
