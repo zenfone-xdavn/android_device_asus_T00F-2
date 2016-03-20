@@ -37,5 +37,8 @@ TARGET_KERNEL_CONFIG := cyanogenmod_a500cg_defconfig
 BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 kmemleak=off androidboot.bootmedia=sdcard vmalloc=256M androidboot.hardware=redhookbay watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# SELinux
+BOARD_SEPOLICY_DIRS += device/asus/T00F/sepolicy
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
