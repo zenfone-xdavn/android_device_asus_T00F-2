@@ -31,7 +31,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_KERNEL_SOURCE := kernel/asus/clovertrail
 TARGET_KERNEL_ARCH := x86
 BOARD_KERNEL_IMAGE_NAME := bzImage
-TARGET_KERNEL_CONFIG := cyanogenmod_a500cg_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_T00F_defconfig
 
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE := init=/init pci=noearly loglevel=0 kmemleak=off androidboot.bootmedia=sdcard vmalloc=256M androidboot.hardware=redhookbay watchdog.watchdog_thresh=60 androidboot.spid=xxxx:xxxx:xxxx:xxxx:xxxx:xxxx androidboot.serialno=01234567890123456789 snd_pcm.maximum_substreams=8 ip=50.0.0.2:50.0.0.1::255.255.255.0::usb0:on debug_locks=0
