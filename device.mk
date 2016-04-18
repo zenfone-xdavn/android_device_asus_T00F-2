@@ -36,6 +36,9 @@ $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/T00F/overlay
 
+PRODUCT_COPY_FILES += \
+    device/asus/T00F/idc/synaptics_dsx.idc:system/usr/idc/synaptics_dsx.idc
+
 $(call inherit-product-if-exists, vendor/asus/T00F/T00F-vendor.mk)
 
 # Inherit from cvtlp-common
