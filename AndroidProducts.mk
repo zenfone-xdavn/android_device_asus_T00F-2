@@ -14,8 +14,5 @@
 # limitations under the License.
 #
 
-REF_PRODUCT_NAME := redhookbay
-TARGET_BOARD_PLATFORM := clovertrail
-
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/device.mk
