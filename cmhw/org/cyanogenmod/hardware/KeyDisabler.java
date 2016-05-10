@@ -30,7 +30,7 @@ import java.io.File;
 
 public class KeyDisabler {
 
-    private static String CONTROL_PATH = "/sys/devices/pci0000:00/0000:00:00.3/i2c-0/0-0020/input/input1/0dbutton";
+    private static String CONTROL_PATH = "/proc/synaptics_dsx/0dbutton";
 
     public static boolean isSupported() {
         return new File(CONTROL_PATH).exists();
