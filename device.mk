@@ -41,5 +41,5 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product-if-exists, vendor/asus/T00F/T00F-vendor.mk)
 
-# Inherit from cvtlp-common
-$(call inherit-product, device/asus/cvtlp-common/cvtlp.mk)
+# Inherit from ctp-common
+$(call inherit-product, device/asus/ctp-common/ctp.mk)

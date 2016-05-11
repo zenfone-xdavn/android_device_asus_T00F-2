@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# inherit from common cvtlp-common
--include device/asus/cvtlp-common/BoardConfigCommon.mk
+# inherit from common ctp-common
+-include device/asus/ctp-common/BoardConfigCommon.mk
 
 #cmhw
 BOARD_HARDWARE_CLASS += device/asus/T00F/cmhw
