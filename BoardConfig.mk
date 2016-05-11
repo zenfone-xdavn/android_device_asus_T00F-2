@@ -17,6 +17,8 @@
 # inherit from common ctp-common
 -include device/asus/ctp-common/BoardConfigCommon.mk
 
+TARGET_RELEASETOOLS_EXTENSIONS := device/asus/T00F
+
 #cmhw
 BOARD_HARDWARE_CLASS += device/asus/T00F/cmhw
 
