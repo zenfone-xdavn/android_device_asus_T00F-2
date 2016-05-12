@@ -15,6 +15,9 @@
 # limitations under the License.
 #
 
+#Touchcreen Keylayout
+BOARD_TOUCHSCREEN_DRIVER := synaptics_dsx
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
