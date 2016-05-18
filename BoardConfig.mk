@@ -35,7 +35,7 @@ BOARD_SEPOLICY_DIRS += device/asus/T00F/sepolicy
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/pci0000:00/0000:00:00.3/i2c-0/0-0020/input/input1/dclick_mode"
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := T00F,T00F1,T00G,T00J,T00J1
+TARGET_OTA_ASSERT_DEVICE := T00F,T00F1,T00G,T00J,T00J1,ASUS_T00J,ASUS_T00G,ASUS_T00F,a600cg,a500cg,a501cg
 
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
